@@ -1,0 +1,51 @@
+{	
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		"node_modeules",
+		"dist",
+		"logs",
+		".git",
+	],
+	"compilerOptions": {
+		"target": "ES2019",
+		"module": "commonjs",
+		"lib": [
+			"ES2019",
+			"ES2020.BigInt",
+			"ES2020.Promise",
+			"ES2020.String",
+			"ES2020.Symbol.WellKnown"
+		],
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"declaration": false,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": false,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"esModuleInterop": true,
+		"removeComments": true,
+		// "noEmitOnError": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"baseUrl": "./src",
+		"paths": {
+			"*": [
+				"./*"
+			],
+			"Src/*": [
+				"./src/*"
+			],
+		}
+	}
+}
